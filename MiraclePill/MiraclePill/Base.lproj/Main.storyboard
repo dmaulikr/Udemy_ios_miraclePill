@@ -58,17 +58,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your name..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SnH-JB-BKS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sgD-Ja-ZBA"/>
+                                </constraints>
+                                <color key="textColor" red="0.78269531250000002" green="0.78269531250000002" blue="0.78269531250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OBt-Mw-O8u" firstAttribute="centerX" secondItem="eFq-cq-4dQ" secondAttribute="centerX" id="4Mq-IW-4QM"/>
                             <constraint firstItem="OBt-Mw-O8u" firstAttribute="top" secondItem="eFq-cq-4dQ" secondAttribute="bottom" constant="8" id="9kQ-bT-YCP"/>
+                            <constraint firstItem="SnH-JB-BKS" firstAttribute="trailing" secondItem="eBe-8j-x1y" secondAttribute="trailing" id="Dsv-du-wnJ"/>
                             <constraint firstItem="OBt-Mw-O8u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="NKY-7C-PBs"/>
                             <constraint firstItem="eBe-8j-x1y" firstAttribute="leading" secondItem="OBt-Mw-O8u" secondAttribute="leading" id="QDJ-kw-pn2"/>
                             <constraint firstItem="eBe-8j-x1y" firstAttribute="trailing" secondItem="OBt-Mw-O8u" secondAttribute="trailing" id="STp-kj-o4R"/>
                             <constraint firstItem="eFq-cq-4dQ" firstAttribute="centerX" secondItem="3Mn-pc-WPN" secondAttribute="centerX" id="WDp-ZU-ihE"/>
                             <constraint firstItem="qKB-b7-sJ2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="cL6-xI-NcS"/>
+                            <constraint firstItem="SnH-JB-BKS" firstAttribute="leading" secondItem="eBe-8j-x1y" secondAttribute="leading" id="kDP-XH-tgU"/>
                             <constraint firstItem="3Mn-pc-WPN" firstAttribute="centerX" secondItem="qKB-b7-sJ2" secondAttribute="centerX" id="lb3-e5-uri"/>
+                            <constraint firstItem="SnH-JB-BKS" firstAttribute="top" secondItem="eBe-8j-x1y" secondAttribute="bottom" constant="8" id="mc3-OY-7gB"/>
                             <constraint firstItem="eFq-cq-4dQ" firstAttribute="top" secondItem="3Mn-pc-WPN" secondAttribute="bottom" constant="8" id="qpk-XN-NaE"/>
                             <constraint firstItem="eBe-8j-x1y" firstAttribute="top" secondItem="OBt-Mw-O8u" secondAttribute="bottom" constant="8" id="r5W-gN-vhp"/>
                             <constraint firstItem="qKB-b7-sJ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x3W-GX-kjD"/>
