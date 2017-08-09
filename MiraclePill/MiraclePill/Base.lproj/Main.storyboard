@@ -166,8 +166,7 @@
                                     <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hVL-qI-atY"/>
                                 </connections>
                             </button>
-                            <pickerView hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-Pl-TBj">
-                                <frame key="frameInset" minX="-86" minY="598" height="136" maxX="234"/>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-Pl-TBj">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="136" id="9sj-ma-otg"/>
                                     <constraint firstAttribute="width" constant="303" id="TxO-ZZ-4Uc"/>
