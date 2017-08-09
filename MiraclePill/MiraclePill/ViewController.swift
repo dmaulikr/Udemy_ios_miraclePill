@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var statePicker: UIPickerView!
+  @IBOutlet weak var statePickerBtn: UIButton!
+  @IBOutlet weak var zipcodeLabel: UILabel!
+  @IBOutlet weak var zipcodeTxt: UITextField!
+  @IBOutlet weak var countryLabel: UILabel!
+  @IBOutlet weak var countryTxt: UITextField!
+  
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
   
@@ -21,6 +30,8 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
+  @IBAction func stateBtnPressed(_ sender: AnyObject) {
+  }
 
 }
 

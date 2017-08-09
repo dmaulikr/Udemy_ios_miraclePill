@@ -91,7 +91,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTRY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VI-bv-uNv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZIP CODE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VI-bv-uNv">
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="303" id="2Fj-vs-5wj"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="3B8-4V-Jlz"/>
@@ -105,7 +105,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your country..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qqg-CD-PUV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your zip code..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qqg-CD-PUV">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="rhE-LE-CsU"/>
                                 </constraints>
@@ -113,7 +113,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZIP CODE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aei-X9-7mA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COUNTRY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aei-X9-7mA">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Imm-8o-kth"/>
                                     <constraint firstAttribute="width" constant="303" id="Lb9-tS-x4a"/>
@@ -125,7 +125,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your zip code..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OYC-QM-fI5">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter your country..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OYC-QM-fI5">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Van-x7-uSc"/>
                                 </constraints>
@@ -162,8 +162,12 @@
                                     <constraint firstAttribute="width" constant="303" id="qOE-bv-2F3"/>
                                 </constraints>
                                 <state key="normal" title="Enter your state"/>
+                                <connections>
+                                    <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hVL-qI-atY"/>
+                                </connections>
                             </button>
-                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-Pl-TBj">
+                            <pickerView hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-Pl-TBj">
+                                <frame key="frameInset" minX="-86" minY="598" height="136" maxX="234"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="136" id="9sj-ma-otg"/>
                                     <constraint firstAttribute="width" constant="303" id="TxO-ZZ-4Uc"/>
@@ -222,6 +226,14 @@
                             <constraint firstItem="3Mn-pc-WPN" firstAttribute="top" secondItem="qKB-b7-sJ2" secondAttribute="bottom" constant="8" id="zzj-o4-0a6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countryLabel" destination="Aei-X9-7mA" id="6tD-HG-vuR"/>
+                        <outlet property="countryTxt" destination="OYC-QM-fI5" id="fUC-F8-0oK"/>
+                        <outlet property="statePicker" destination="ivb-Pl-TBj" id="iq4-KO-7qu"/>
+                        <outlet property="statePickerBtn" destination="wwj-3M-2nC" id="hiI-Kz-glZ"/>
+                        <outlet property="zipcodeLabel" destination="2VI-bv-uNv" id="Ubz-CJ-ohC"/>
+                        <outlet property="zipcodeTxt" destination="Qqg-CD-PUV" id="XeZ-xy-FxG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
